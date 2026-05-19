@@ -5,9 +5,9 @@ import { Leaf, Zap, Car, ShieldCheck } from "lucide-react";
 import { useLanguage } from "@/components/providers/LanguageProvider";
 
 export default function EVPartnership() {
-    const { locale } = useLanguage();
+    const { language } = useLanguage();
 
-    const isIndo = locale === "id";
+    const isIndo = language === "id";
 
     const title = isIndo 
         ? "Kolaborasi Kendaraan Listrik (EV) Ramah Lingkungan" 
